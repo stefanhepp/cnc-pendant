@@ -1,8 +1,7 @@
 README
 ------
 
-Template repository for hardware design projects, using KiCAD and FreeCAD.
-
+CNC Pendant for bCNC grbl controller.
 
 License
 -------
