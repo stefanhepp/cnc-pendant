@@ -9,6 +9,7 @@
 *.sch-bak
 *~
 _autosave-*
+*.lck
 *.tmp
 *-save.pro
 *-save.kicad_pcb
@@ -17,6 +18,7 @@ fp-info-cache
 
 # Ignore FreeCAD backups
 *.FCStd1
+*.FCBak
 
 # Ignore Blender backups
 *.blend1
@@ -34,3 +36,4 @@ fp-info-cache
 
 # Ignore editor temp files
 *.swp
+
