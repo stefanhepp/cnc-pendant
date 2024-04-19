@@ -37,3 +37,6 @@ fp-info-cache
 # Ignore editor temp files
 *.swp
 
+# Ignore gerber output folder
+gerber/
+
