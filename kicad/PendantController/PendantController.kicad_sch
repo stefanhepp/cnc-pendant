@@ -1596,6 +1596,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Diode:1N4148"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -3288,7 +3409,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 45.72) (xy 130.81 45.72)
+			(xy 128.27 45.72) (xy 138.43 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5178,7 +5299,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 135.89 45.72 0)
+		(at 143.51 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5187,7 +5308,7 @@
 		(fields_autoplaced yes)
 		(uuid "34c34fa2-9749-4f5f-8280-66cff91e68cc")
 		(property "Reference" "J3"
-			(at 138.43 45.7199 0)
+			(at 146.05 45.7199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5196,7 +5317,7 @@
 			)
 		)
 		(property "Value" "DC24V"
-			(at 138.43 48.2599 0)
+			(at 146.05 48.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5205,7 +5326,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 135.89 45.72 0)
+			(at 143.51 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,7 +5335,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 45.72 0)
+			(at 143.51 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5223,7 +5344,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 135.89 45.72 0)
+			(at 143.51 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6022,10 +6143,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e7231008-9b04-4a92-888b-69d28bf18e07")
+			(uuid "e7231008-9b04-4a92-888b-69d28bf18e08")
 		)
 		(pin "2"
-			(uuid "205ccfaa-27f3-499f-a279-b94810fb797f")
+			(uuid "205ccfaa-27f3-499f-a279-b94810fb7980")
 		)
 		(instances
 			(project "PendantController"
@@ -7661,6 +7782,73 @@
 			(project "PendantController"
 				(path "/97d16841-8b77-4c29-a79d-2680519e8080"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 48.26 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e5bc777c-156d-4f3e-bfd8-f6e706c186b0")
+		(property "Reference" "R1"
+			(at 134.62 54.61 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 134.62 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal"
+			(at 134.62 46.482 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b9bfb3cf-30ad-46f6-a61b-b9827e45b28b")
+		)
+		(pin "2"
+			(uuid "91d59acd-ef8d-4cc0-aa2d-f3ba16ce4810")
+		)
+		(instances
+			(project "PendantController"
+				(path "/97d16841-8b77-4c29-a79d-2680519e8080"
+					(reference "R1")
 					(unit 1)
 				)
 			)
